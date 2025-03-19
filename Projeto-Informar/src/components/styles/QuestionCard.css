@@ -1,0 +1,186 @@
+.question-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 16px;
+    margin: 16px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Título da questão */
+  .question-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    /* linha que separa */
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Descrição / enunciado */
+  .question-description {
+    margin-bottom: 20px;
+  }
+  
+  /* Trecho de código */
+  .question-code {
+    background-color: #f8f8f8;
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    color: #333;
+  }
+  
+  /* Pergunta principal */
+  .question-text {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Container das respostas */
+  .question-answers {
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
+  
+  /* Cada opção */
+  .question-answer {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 2px solid transparent;
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  /* Quando a opção está selecionada (antes de enviar) */
+  .selected-answer {
+    border-color: #3498db;       /* Borda azul */
+    background-color: #eaf6ff;   /* Fundo levemente azul */
+  }
+  
+  /* Opção correta após envio */
+  .correct-answer {
+    border-color: green;
+    background-color: #e0ffe0;
+  }
+  
+  /* Opção incorreta após envio */
+  .incorrect-answer {
+    border-color: red;
+    background-color: #ffe0e0;
+  }
+  
+  /* Ícones de certo/errado */
+  .icon-check {
+    color: green;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  .icon-x {
+    color: red;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  /* Texto da alternativa */
+  .answer-text {
+    flex: 1;
+    white-space: pre-wrap;
+  }
+  
+  /* Botão Enviar */
+  .btn-submit {
+    background-color: #2185d0;
+    color: #fff;
+    border: 1px solid #2185d0;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .btn-submit:hover {
+    /* background-color: #1678c2; */
+    color: #1678c2;
+    background-color: #fff;
+    border: 1px solid #1678c2;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Feedback da resposta */
+  .question-feedback {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 16px;
+  }
+  
+  .question-feedback.correct {
+    border-color: green;
+  }
+  
+  .question-feedback.incorrect {
+    border-color: red;
+  }
+  .question-feedback.correct h2 {
+    border-bottom: 1px green solid;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.question-feedback.incorrect h2 {
+    border-bottom: 1px red solid;
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+
+  .question-feedback p {
+    margin-bottom: 25px;
+  }
+  
+  /* Botão Refazer */
+  .btn-refazer {
+    color: #2185d0;
+    background-color: #fff;
+    border: 1px solid #2185d0;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .btn-refazer:hover {
+    background-color: #1678c2;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+/* Letra da alternativa (A, B, C, D...) */
+.answer-letter {
+    display: inline-block;
+    min-width: 28px;    /* Largura mínima para caber a letra */
+    height: 28px;
+    background-color: #ddd;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;  /* Centraliza verticalmente a letra */
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+
+.correct-letter {
+    background-color: green;
+    color: white;
+}
+
+.incorrect-letter {
+    background-color: red;
+    color: white;
+}

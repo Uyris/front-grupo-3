@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Para evitar a barra de rolagem horizontal */
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden; /* Para evitar a barra de rolagem horizontal */
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh; /* Para ocupar a tela inteira */
+}
+
+.content-container {
+  flex: 1; 
+  padding: 160px 360px 60px 360px; /* Espaçamento no conteúdo */
+}
+
+h1 {
+  font-size: 300 px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.codespace {
+  width: 100%;
+  min-height: 300px;
+  max-height: 700px; /* Define um limite máximo */
+  padding: 5px;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+
+.terminal_buttons_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* Estilo para o botão */
+.button {
+  display: block;
+  width: fit-content;
+  height: 40px;
+  padding: 5px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: rgb(221, 8, 8);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  gap:1rem;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+/* Estilo para o painel de resultados */
+.results-panel {
+  margin-top: 30px;
+}
+
+.results-panel h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+pre {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+/* Estilo para o feedback do programa */
+.program-output {
+  background-color: #282828;
+  border-radius: 5px;
+  color: #00ff00;
+}
+
+/* Estilo para o feedback dos testes */
+.test-feedback {
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  color: #ffcc00;
+}
+
+/* Tamanho de tela menor */
+@media screen and (max-width: 1350px) {
+  .content-container {
+    padding: max(120px, 15%) max(50px, 15%) 40px;
+  }
+}

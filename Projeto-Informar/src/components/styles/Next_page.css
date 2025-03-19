@@ -1,0 +1,29 @@
+.next-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinhar textos à esquerda */
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+  }
+  
+  .next-page-container h2 {
+    color: red; /* Cor vermelha para o título */
+    margin: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  
+  .next-page-container p {
+    display: flex;
+    align-items: center; /* Alinha o texto e a seta */
+    gap: 5px; /* Espaço entre o nome da página e a seta */
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .next-page-container p::after {
+    content: "→"; /* Adiciona a seta */
+    font-size: 18px;
+  }
+  
